@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3346DB642BC026AF007F1A43 /* g2048App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3346DB632BC026AF007F1A43 /* g2048App.swift */; };
-		3346DB662BC026AF007F1A43 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3346DB652BC026AF007F1A43 /* ContentView.swift */; };
 		3346DB682BC026B2007F1A43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3346DB672BC026B2007F1A43 /* Assets.xcassets */; };
 		3346DB6B2BC026B2007F1A43 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3346DB6A2BC026B2007F1A43 /* Preview Assets.xcassets */; };
 		3346DB6D2BC026B2007F1A43 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3346DB6C2BC026B2007F1A43 /* Persistence.swift */; };
@@ -16,6 +15,12 @@
 		3346DB7A2BC026B3007F1A43 /* g2048Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3346DB792BC026B3007F1A43 /* g2048Tests.swift */; };
 		3346DB842BC026B3007F1A43 /* g2048UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3346DB832BC026B3007F1A43 /* g2048UITests.swift */; };
 		3346DB862BC026B3007F1A43 /* g2048UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3346DB852BC026B3007F1A43 /* g2048UITestsLaunchTests.swift */; };
+		3346DB932BC0284C007F1A43 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3346DB922BC0284C007F1A43 /* MenuView.swift */; };
+		3346DB952BC02C2F007F1A43 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3346DB942BC02C2F007F1A43 /* GameView.swift */; };
+		3346DB972BC02C69007F1A43 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3346DB962BC02C69007F1A43 /* GameManager.swift */; };
+		33BB3A522BC0AE9100AED826 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 33BB3A512BC0AE9100AED826 /* .swiftlint.yml */; };
+		33BB3A542BC0AEE100AED826 /* README.MD in Resources */ = {isa = PBXBuildFile; fileRef = 33BB3A532BC0AEE100AED826 /* README.MD */; };
+		33BB3A562BC0AF0B00AED826 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 33BB3A552BC0AF0B00AED826 /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +43,6 @@
 /* Begin PBXFileReference section */
 		3346DB602BC026AF007F1A43 /* g2048.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = g2048.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3346DB632BC026AF007F1A43 /* g2048App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = g2048App.swift; sourceTree = "<group>"; };
-		3346DB652BC026AF007F1A43 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3346DB672BC026B2007F1A43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3346DB6A2BC026B2007F1A43 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3346DB6C2BC026B2007F1A43 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -48,6 +52,12 @@
 		3346DB7F2BC026B3007F1A43 /* g2048UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = g2048UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3346DB832BC026B3007F1A43 /* g2048UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = g2048UITests.swift; sourceTree = "<group>"; };
 		3346DB852BC026B3007F1A43 /* g2048UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = g2048UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3346DB922BC0284C007F1A43 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		3346DB942BC02C2F007F1A43 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		3346DB962BC02C69007F1A43 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		33BB3A512BC0AE9100AED826 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		33BB3A532BC0AEE100AED826 /* README.MD */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.MD; sourceTree = "<group>"; };
+		33BB3A552BC0AF0B00AED826 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +91,9 @@
 				3346DB622BC026AF007F1A43 /* g2048 */,
 				3346DB782BC026B3007F1A43 /* g2048Tests */,
 				3346DB822BC026B3007F1A43 /* g2048UITests */,
+				33BB3A552BC0AF0B00AED826 /* LICENSE */,
+				33BB3A532BC0AEE100AED826 /* README.MD */,
+				33BB3A512BC0AE9100AED826 /* .swiftlint.yml */,
 				3346DB612BC026AF007F1A43 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,10 +111,10 @@
 		3346DB622BC026AF007F1A43 /* g2048 */ = {
 			isa = PBXGroup;
 			children = (
-				3346DB632BC026AF007F1A43 /* g2048App.swift */,
-				3346DB652BC026AF007F1A43 /* ContentView.swift */,
+				33BB3A4F2BC0AD2C00AED826 /* ViewModel */,
+				33BB3A4E2BC0AD1500AED826 /* View */,
+				33BB3A4D2BC0ACFC00AED826 /* Model */,
 				3346DB672BC026B2007F1A43 /* Assets.xcassets */,
-				3346DB6C2BC026B2007F1A43 /* Persistence.swift */,
 				3346DB6E2BC026B2007F1A43 /* g2048.xcdatamodeld */,
 				3346DB692BC026B2007F1A43 /* Preview Content */,
 			);
@@ -133,6 +146,32 @@
 			path = g2048UITests;
 			sourceTree = "<group>";
 		};
+		33BB3A4D2BC0ACFC00AED826 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3346DB962BC02C69007F1A43 /* GameManager.swift */,
+				3346DB6C2BC026B2007F1A43 /* Persistence.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33BB3A4E2BC0AD1500AED826 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3346DB922BC0284C007F1A43 /* MenuView.swift */,
+				3346DB942BC02C2F007F1A43 /* GameView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		33BB3A4F2BC0AD2C00AED826 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3346DB632BC026AF007F1A43 /* g2048App.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +182,7 @@
 				3346DB5C2BC026AF007F1A43 /* Sources */,
 				3346DB5D2BC026AF007F1A43 /* Frameworks */,
 				3346DB5E2BC026AF007F1A43 /* Resources */,
+				33BB3A572BC0AF4700AED826 /* Linter */,
 			);
 			buildRules = (
 			);
@@ -237,8 +277,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33BB3A522BC0AE9100AED826 /* .swiftlint.yml in Resources */,
 				3346DB6B2BC026B2007F1A43 /* Preview Assets.xcassets in Resources */,
+				33BB3A542BC0AEE100AED826 /* README.MD in Resources */,
 				3346DB682BC026B2007F1A43 /* Assets.xcassets in Resources */,
+				33BB3A562BC0AF0B00AED826 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,15 +301,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		33BB3A572BC0AF4700AED826 /* Linter */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Linter;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3346DB5C2BC026AF007F1A43 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3346DB6D2BC026B2007F1A43 /* Persistence.swift in Sources */,
-				3346DB662BC026AF007F1A43 /* ContentView.swift in Sources */,
 				3346DB642BC026AF007F1A43 /* g2048App.swift in Sources */,
+				3346DB972BC02C69007F1A43 /* GameManager.swift in Sources */,
 				3346DB702BC026B2007F1A43 /* g2048.xcdatamodeld in Sources */,
+				3346DB952BC02C2F007F1A43 /* GameView.swift in Sources */,
+				3346DB932BC0284C007F1A43 /* MenuView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,11 +495,12 @@
 				DEVELOPMENT_TEAM = W6HHBUW4D9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.arcade-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,11 +525,12 @@
 				DEVELOPMENT_TEAM = W6HHBUW4D9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.arcade-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
