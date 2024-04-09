@@ -8,6 +8,7 @@ identifier_name:
     - id
     - ok
     - up
+    - to
 
 line_length:
   warning: 150
