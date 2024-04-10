@@ -30,23 +30,36 @@ struct MenuView: View {
         }
     }
 
+    /// Play button pressed state.
+    @Binding var selectedScene: AppScene
+
     /// Main menu body.
     var body: some View {
-        VStack(alignment: .center, spacing: 10) {
-            MenuButton(text: "play", color: .gray, action: {})
-            MenuButton(text: "settings", color: .brown, action: {})
-            MenuButton(text: "highscores", color: .yellow, action: {})
+        ZStack {
+            /// Background for game scene.
+            Rectangle()
+                .foregroundColor(Color("Background"))
+                .ignoresSafeArea()
+            /// Menu buttons.
+            VStack(alignment: .center, spacing: 10) {
+                MenuButton(text: "play", color: Color("BoardDark"), action: {
+                    self.selectedScene = .inGame
+                })
+                MenuButton(text: "highscores", color: Color("BoardDark"), action: {
+                    self.selectedScene = .highScores
+                })
+            }
+            .foregroundStyle(.white)
+            .frame(maxWidth: 500)
+            .padding(.horizontal, 30.0)
+            .font(.title)
         }
-        .foregroundStyle(.white)
-        .frame(maxWidth: 500)
-        .padding(.horizontal, 30.0)
-        .font(.title)
     }
 }
 
 /// Main menu view editor preview.
 struct MenuView_Previews: PreviewProvider {
     static var previews: some View {
-        MenuView()
+        MenuView(selectedScene: .constant(.mainMenu))
     }
 }

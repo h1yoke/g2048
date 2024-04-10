@@ -97,8 +97,8 @@ struct BoardView: View {
     /// Calculate new positions for cells and animate transitions.
     private func animateSwipe(direction: G2048Manager.Direction) {
         /// Animate cell transitions.
+        let transitions = manager.makeTurn(direction)
         withAnimation(.linear(duration: 0.2)) {
-            let transitions = manager.makeTurn(direction)
             transitions.forEach { (from: IntPair, to: IntPair) in
                 let width: Double =
                     (size.width + cellSpacing) *
@@ -122,9 +122,11 @@ struct BoardView: View {
             updateTimer?.invalidate()
 
             /// Make turn and add new cell into field.
-            withAnimation(.linear(duration: 0.3)) {
-                manager.addRandomCell()
-                cells = manager.cells
+            if transitions.count > 0 {
+                withAnimation(.linear(duration: 0.3)) {
+                    manager.addRandomCell()
+                    cells = manager.cells
+                }
             }
         }
     }

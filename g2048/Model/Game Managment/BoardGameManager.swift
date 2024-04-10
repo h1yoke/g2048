@@ -16,7 +16,10 @@ protocol BoardGameManager: ObservableObject {
     var cells: [[Int]] { get }
 
     /// Game intermediate score.
-    var score: Int { get set }
+    var score: Int { get }
+
+    /// *Is ended* game state.
+    var isEnded: Bool { get }
 
     /// Game manager initializer. Sets-up grid size and cells values.
     init(gridSize: (width: Int, height: Int), preset cells: [[Int]])

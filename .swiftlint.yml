@@ -25,6 +25,5 @@ type_body_length:
   error: 450
 
 excluded:
-  - RichEditorView
-  - TelegraphUITests
+  - g2048UITests
 

@@ -1,4 +1,3 @@
-
 /// `(Int, Int)` to `IntPair` convertible protocol.
 protocol IntPairConvertible {
     init(_ pair: (Int, Int))

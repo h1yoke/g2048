@@ -44,6 +44,9 @@ class G2048Manager: BoardGameManager {
     /// Calculated by adding all combined cells values.
     @Published var score: Int = 0
 
+    /// *is ended* game state.
+    @Published var isEnded: Bool = false
+
     /// Calculated property for empty cells list.
     private var emptyCells: [(x: Int, y: Int)] {
         var result: [(x: Int, y: Int)] = []
@@ -264,16 +267,19 @@ class G2048Manager: BoardGameManager {
     ///
     /// Difficulty: O(gridSize.height \* gridSize.width).
     func makeTurn(_ interaction: Direction) -> [IntPair: IntPair] {
+        var result: [IntPair: IntPair] = [:]
         switch interaction {
         case .left:
-            return manageHorizontal(isLeft: true)
+            result = manageHorizontal(isLeft: true)
         case .right:
-            return manageHorizontal(isLeft: false)
+            result = manageHorizontal(isLeft: false)
         case .up:
-            return manageVertical(isUp: true)
+            result = manageVertical(isUp: true)
         case .down:
-            return manageVertical(isUp: false)
+            result = manageVertical(isUp: false)
         }
+        isEnded = result.count == 0 && emptyCells.count == 0
+        return result
     }
 
     /// Adds new valid cell in a random empty place.

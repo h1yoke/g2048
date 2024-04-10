@@ -5,6 +5,12 @@ struct GameViewModel: View {
     /// 2048 Game manager object.
     @StateObject var model = G2048Manager(gridSize: (width: 4, height: 4))
 
+    /// Records context for saving new scores.
+    @Environment(\.managedObjectContext) private var recordContext
+
+    /// Scene switcher.
+    @Binding var selectedScene: AppScene
+
     /// Scene body.
     var body: some View {
         ZStack {
@@ -22,13 +28,21 @@ struct GameViewModel: View {
                         .background(Color("Board"))
                         .clipShape(Capsule())
                     /// Game view.
-                    BoardView(manager: model)
-                        .padding()
+                    if !model.isEnded {
+                        BoardView(manager: model)
+                            .padding()
+                    } else {
+                        Text("Game ended!")
+                            .font(.title)
+                            .padding()
+                    }
                 }
-                /// Pause button.
+                /// Stop game button.
                 Button {
+                    saveRecord()
+                    selectedScene = .mainMenu
                 } label: {
-                    Image(systemName: "pause.circle")
+                    Image(systemName: "stop.circle")
                         .resizable()
                         .foregroundColor(Color("BoardDark"))
                 }
@@ -40,11 +54,20 @@ struct GameViewModel: View {
         }
     }
 
+    /// Save new score method.
+    func saveRecord() {
+        if model.score > 0 {
+            let newRecord = Record(context: recordContext)
+            newRecord.score = Int32(model.score)
+            newRecord.timestamp = Date()
+            try? recordContext.save()
+        }
+    }
 }
 
 /// Game ViewModel editor preview.
 struct GameViewModel_Previews: PreviewProvider {
     static var previews: some View {
-        GameViewModel()
+        GameViewModel(selectedScene: .constant(.mainMenu))
     }
 }
