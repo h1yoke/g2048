@@ -12,9 +12,8 @@
 		3346DB682BC026B2007F1A43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3346DB672BC026B2007F1A43 /* Assets.xcassets */; };
 		3346DB6D2BC026B2007F1A43 /* RecordPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3346DB6C2BC026B2007F1A43 /* RecordPersistence.swift */; };
 		3346DB702BC026B2007F1A43 /* g2048.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3346DB6E2BC026B2007F1A43 /* g2048.xcdatamodeld */; };
-		3346DB7A2BC026B3007F1A43 /* g2048Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3346DB792BC026B3007F1A43 /* g2048Tests.swift */; };
-		3346DB842BC026B3007F1A43 /* g2048UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3346DB832BC026B3007F1A43 /* g2048UITests.swift */; };
-		3346DB862BC026B3007F1A43 /* g2048UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3346DB852BC026B3007F1A43 /* g2048UITestsLaunchTests.swift */; };
+		3346DB7A2BC026B3007F1A43 /* G2048ManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3346DB792BC026B3007F1A43 /* G2048ManagerTests.swift */; };
+		3346DB842BC026B3007F1A43 /* MainMenuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3346DB832BC026B3007F1A43 /* MainMenuUITests.swift */; };
 		3346DB932BC0284C007F1A43 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3346DB922BC0284C007F1A43 /* MenuView.swift */; };
 		3346DB952BC02C2F007F1A43 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3346DB942BC02C2F007F1A43 /* GameViewModel.swift */; };
 		3346DB972BC02C69007F1A43 /* BoardGameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3346DB962BC02C69007F1A43 /* BoardGameManager.swift */; };
@@ -22,6 +21,7 @@
 		3365CE5A2BC15ECB00B8F226 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3365CE592BC15ECB00B8F226 /* BoardView.swift */; };
 		3368F8102BC59EC60066C0BF /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3368F80F2BC59EC60066C0BF /* RecordView.swift */; };
 		3368F8122BC5A5740066C0BF /* AppScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3368F8112BC5A5740066C0BF /* AppScene.swift */; };
+		3368F81B2BC6BCDA0066C0BF /* GameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3368F81A2BC6BCDA0066C0BF /* GameUITests.swift */; };
 		33B273B52BC16D6F00984562 /* IntPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B273B42BC16D6F00984562 /* IntPair.swift */; };
 		33BB3A522BC0AE9100AED826 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 33BB3A512BC0AE9100AED826 /* .swiftlint.yml */; };
 		33BB3A542BC0AEE100AED826 /* README.MD in Resources */ = {isa = PBXBuildFile; fileRef = 33BB3A532BC0AEE100AED826 /* README.MD */; };
@@ -54,10 +54,9 @@
 		3346DB6C2BC026B2007F1A43 /* RecordPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordPersistence.swift; sourceTree = "<group>"; };
 		3346DB6F2BC026B2007F1A43 /* g2048.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = g2048.xcdatamodel; sourceTree = "<group>"; };
 		3346DB752BC026B3007F1A43 /* g2048Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = g2048Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3346DB792BC026B3007F1A43 /* g2048Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = g2048Tests.swift; sourceTree = "<group>"; };
+		3346DB792BC026B3007F1A43 /* G2048ManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = G2048ManagerTests.swift; sourceTree = "<group>"; };
 		3346DB7F2BC026B3007F1A43 /* g2048UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = g2048UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3346DB832BC026B3007F1A43 /* g2048UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = g2048UITests.swift; sourceTree = "<group>"; };
-		3346DB852BC026B3007F1A43 /* g2048UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = g2048UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3346DB832BC026B3007F1A43 /* MainMenuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuUITests.swift; sourceTree = "<group>"; };
 		3346DB922BC0284C007F1A43 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		3346DB942BC02C2F007F1A43 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		3346DB962BC02C69007F1A43 /* BoardGameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardGameManager.swift; sourceTree = "<group>"; };
@@ -65,6 +64,7 @@
 		3365CE592BC15ECB00B8F226 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
 		3368F80F2BC59EC60066C0BF /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
 		3368F8112BC5A5740066C0BF /* AppScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppScene.swift; sourceTree = "<group>"; };
+		3368F81A2BC6BCDA0066C0BF /* GameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameUITests.swift; sourceTree = "<group>"; };
 		33B273B42BC16D6F00984562 /* IntPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntPair.swift; sourceTree = "<group>"; };
 		33BB3A512BC0AE9100AED826 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		33BB3A532BC0AEE100AED826 /* README.MD */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.MD; sourceTree = "<group>"; };
@@ -136,7 +136,7 @@
 		3346DB782BC026B3007F1A43 /* g2048Tests */ = {
 			isa = PBXGroup;
 			children = (
-				3346DB792BC026B3007F1A43 /* g2048Tests.swift */,
+				3346DB792BC026B3007F1A43 /* G2048ManagerTests.swift */,
 			);
 			path = g2048Tests;
 			sourceTree = "<group>";
@@ -144,8 +144,8 @@
 		3346DB822BC026B3007F1A43 /* g2048UITests */ = {
 			isa = PBXGroup;
 			children = (
-				3346DB832BC026B3007F1A43 /* g2048UITests.swift */,
-				3346DB852BC026B3007F1A43 /* g2048UITestsLaunchTests.swift */,
+				3346DB832BC026B3007F1A43 /* MainMenuUITests.swift */,
+				3368F81A2BC6BCDA0066C0BF /* GameUITests.swift */,
 			);
 			path = g2048UITests;
 			sourceTree = "<group>";
@@ -413,7 +413,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3346DB7A2BC026B3007F1A43 /* g2048Tests.swift in Sources */,
+				3346DB7A2BC026B3007F1A43 /* G2048ManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,8 +421,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3346DB862BC026B3007F1A43 /* g2048UITestsLaunchTests.swift in Sources */,
-				3346DB842BC026B3007F1A43 /* g2048UITests.swift in Sources */,
+				3346DB842BC026B3007F1A43 /* MainMenuUITests.swift in Sources */,
+				3368F81B2BC6BCDA0066C0BF /* GameUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,7 +563,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"g2048/Preview Content\"";
 				DEVELOPMENT_TEAM = W6HHBUW4D9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -593,7 +592,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"g2048/Preview Content\"";
 				DEVELOPMENT_TEAM = W6HHBUW4D9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
